@@ -10,10 +10,23 @@
       margin: 0;
       padding: 0;
       background: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    }
+
+    nav {
+      background: #0077cc;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .portfolio-container {
@@ -23,7 +36,7 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       text-align: center;
       max-width: 600px;
-      width: 90%;
+      margin: 40px auto;
     }
 
     .profile-pic {
@@ -89,29 +102,44 @@
 </head>
 <body>
 
-  <div class="portfolio-container">
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <div class="portfolio-container" id="home">
     <!-- Profile Picture -->
-    <img src="profile.jpg.jpeg"class="profile-pic">
+    <img src="anita.jpg.jpeg" alt="Anita's Profile Picture" class="profile-pic">
 
     <!-- Name and Bio -->
     <h1>Anita Katunge</h1>
     <p class="bio">Aspiring Front-End Developer passionate about clean design, responsive layouts, and modern web technologies.</p>
 
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a web enthusiast who enjoys building intuitive and elegant user interfaces. My interests lie in front-end development, and I continuously strive to learn new tools and techniques to improve my work.</p>
+    </section>
+
     <!-- Skills Section -->
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>HTML5 & CSS3</li>
-      <li>JavaScript</li>
-      <li>Bootstrap</li>
-      <li>Responsive Web Design</li>
-      <li>Git & GitHub</li>
-      <li>Basic Python</li>
-    </ul>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+        <li>Basic Python</li>
+      </ul>
+    </section>
 
     <!-- Contact Section -->
     <h2>Contact</h2>
     <div class="contact">
-      <p>Email: <a href="mailto:anita@example.com">kamwantianita@gmail.com</a></p>
+      <p>Email: <a href="mailto:kamwantianita@gmail.com">kamwantianita@gmail.com</a></p>
       <p>Phone: +254 757259697</p>
       <p>GitHub: <a href="https://github.com/anita" target="_blank">github.com/anita</a></p>
     </div>
